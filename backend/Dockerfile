@@ -4,6 +4,6 @@ FROM haskell
 
 MAINTAINER lemmih@gmail.com
 
-RUN apt-get update && apt-get install -y libpq-dev git
+RUN apt-get update && apt-get install -y libpq-dev git fonts-arphic-ukai imagemagick
 RUN cabal update && cabal install http-client happstack-server postgresql-simple resource-pool file-embed influxdb mongoDB mwc-random optparse-applicative mwc-random xhtml yaml conduit
 
